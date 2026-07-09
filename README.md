@@ -119,8 +119,8 @@ ___
 
 ___
 
-### Reference list of the paper
---8<-- "bibliography.md"
+### Reference list of the named paper
+[References](bibliography.md)
 ___
 
 ### Acknowledgement

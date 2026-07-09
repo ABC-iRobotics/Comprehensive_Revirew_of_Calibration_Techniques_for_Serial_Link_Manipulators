@@ -5,7 +5,9 @@ ___
 - Usage
 - Table of comparison
 - Generated diagram
+- Reference list of the paper
 - Acknowledgement
+
 
 ___
 
@@ -114,3 +116,11 @@ ___
 
 ### Generated diagram
 ![CEI Diagram](Figure_1.png)
+
+___
+
+### Reference list of the paper
+--8<-- "bibliography.md"
+___
+
+### Acknowledgement

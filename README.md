@@ -35,7 +35,7 @@ pip3 install pypdf pybtex pyyaml matplotlib
 ```bash
 python3 extractor.py
 ```
-During the runtime, all of the citation number must be manually added, for the corresponding papers. For this use the PDF. 
+During the runtime, all of the citation number must be manually typed into the terminal (after that type "enter"), for the corresponding papers.
 
 - Run the diagram or the table python script corresponding to your needs: 
 ```bash

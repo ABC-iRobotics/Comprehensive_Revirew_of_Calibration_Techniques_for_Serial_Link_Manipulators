@@ -119,7 +119,7 @@ ___
 
 ___
 
-### Reference list of the named paper
+### Reference list of the paper
 [References](bibliography.md)
 ___
 

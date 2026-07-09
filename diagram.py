@@ -1,11 +1,15 @@
 
-import yaml 
+from pathlib import Path
+import yaml
 import matplotlib.pyplot as plt
 import matplotlib
-matplotlib.use('Qt5Agg')
+matplotlib.use("Qt5Agg")
 
-### PATH ###
-with open(r'C:\Users\karol\Desktop\Munka\cikkek\Images\Images\Cikk\data.yaml') as file:
+# Paths
+current_path = Path(__file__).resolve().parent
+data_path = current_path / "data.yaml"
+
+with open(data_path, "r", encoding="utf-8") as file:
     config = yaml.safe_load(file)
 
 # Define color palette for shapes and edges

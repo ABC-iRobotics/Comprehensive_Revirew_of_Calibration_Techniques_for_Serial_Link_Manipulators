@@ -2,15 +2,21 @@
 from pypdf import PdfReader
 from pybtex.database.input import bibtex
 import yaml 
+from pathlib import Path
 
-## PATH ###
-with open(r'C:\Users\karol\Desktop\Munka\cikkek\Images\Images\Cikk\data.yaml') as file:
+current_path = Path(__file__).resolve().parent
+data_path = current_path / "data.yaml"
+
+with open(data_path, "r", encoding="utf-8") as file:
     config = yaml.safe_load(file)
 
-# creating a pdf reader object
-reader = PdfReader(r'C:\Users\karol\Desktop\Munka\cikkek\Images\Images\Cikk\output.pdf')
+pdf_path = current_path / "Paper.pdf"
+bib_path = current_path / "bibliography.bib"
+
+reader = PdfReader(pdf_path)
+
 parser = bibtex.Parser()
-bib_data = parser.parse_file(r'C:\Users\karol\Desktop\Munka\cikkek\Images\Images\Cikk\bibliography.bib')
+bib_data = parser.parse_file(str(bib_path))
 bib_data.entries.keys()
 oldals = [-1,-2,-3,-4,-5]
 for t in range(len(config)):
@@ -61,8 +67,8 @@ for t in range(len(config)):
                 'title': bib_data.entries[bib_str].fields['title']
             }
             config['cikk_' + str(t) ].update(new_yaml_data_dict)
-            with open('/home/arminkaroly/Munka/Images/Cikk/data.yaml','w') as yamlfile:
-                yaml.safe_dump(config, yamlfile, default_flow_style = False)
+            with open(data_path, "w", encoding="utf-8") as yamlfile:
+                yaml.safe_dump(config, yamlfile, default_flow_style=False)
             break
         if q == -5:
             print("Title:")
@@ -73,8 +79,5 @@ for t in range(len(config)):
                 'title': bib_data.entries[bib_str].fields['title']
             }
             config['cikk_' + str(t) ].update(new_yaml_data_dict)
-            with open(r'C:\Users\karol\Desktop\Munka\cikkek\Images\Images\Cikk\data.yaml','w') as yamlfile:
-                yaml.safe_dump(config, yamlfile, default_flow_style = False)
-
-
-# Kérdezd meg a chatGPT-t hogy van e benne 2 azonos ID mert ha igen akkor azért lehet mert a szerzők ugyanazok.  
+            with open(data_path, "w", encoding="utf-8") as yamlfile:
+                yaml.safe_dump(config, yamlfile, default_flow_style=False)

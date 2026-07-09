@@ -25,6 +25,12 @@ It loads the calibration data from data.yaml, then processes each entry by extra
 ___
 
 ### Usage 
+
+- Install the necessary python packages:
+```bash
+pip3 install pypdf pybtex pyyaml matplotlib
+```
+
 - Run the extractor python script
 ```bash
 python3 extractor.py

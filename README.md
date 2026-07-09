@@ -1,5 +1,5 @@
-# Comprehensive_Revirew_of_Calibration_Techniques_for_Serial_Link_Manipulators
-Supplementary materials of the following paper: Comprehensive Review of Calibration Techniques for Serial Link Manipulators: Insights into Mathematical and Methodological Evolutions
+# Comprehensive Review of Calibration Techniques for Serial Link Manipulators
+##Supplementary materials of the following paper: Comprehensive Review of Calibration Techniques for Serial Link Manipulators: Insights into Mathematical and Methodological Evolutions
 
 
 

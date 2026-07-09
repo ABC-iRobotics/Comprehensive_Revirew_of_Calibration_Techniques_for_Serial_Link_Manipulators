@@ -1,8 +1,48 @@
-# Comprehensive Review of Calibration Techniques for Serial Link Manipulators
-##Supplementary materials of the following paper: Comprehensive Review of Calibration Techniques for Serial Link Manipulators: Insights into Mathematical and Methodological Evolutions
+# Supplementary materials for the paper called: Comprehensive Review of Calibration Techniques for Serial Link Manipulators: Insights into Mathematical and Methodological Evolutions
+___
+## Table of context
+- Explanation of the source codes 
+- Usage
+- Table of comparison
+
+___
+
+### Explanation of the source codes 
+#### - extractor.py
+
+This script automatically matches bibliography entries from a .bib file with their citation numbers in a PDF document and stores the extracted citation IDs in a YAML configuration file. It searches the reference section of the PDF, identifies each reference by its author list, extracts the corresponding citation number (e.g., [42]), and updates the YAML database.
+
+#### - diagram.py
+
+This code creates a scatter plot visualization of calibration approaches based on their normalized accuracy improvement and Calibration Efficiency Index (CEI), which is calculated by the values presented in the data.yaml file.
 
 
+#### - table.py
 
+This code automatically generates a LaTeX table from a YAML database containing calibration-method information.
+It loads the calibration data from data.yaml, then processes each entry by extracting the citation ID, modeling method, optimization method, estimated cost, setup complexity, computational cost, and accuracy values.
+
+___
+
+### Usage 
+- Run the extractor python script
+```bash
+python3 extractor.py
+```
+During the runtime, all of the citation number must be manually added, for the corresponding papers. For this use the PDF. 
+
+- Run the diagram or the table python script corresponding to your needs: 
+```bash
+python3 diagram.py
+```
+
+```bash
+python3 table.py
+```
+
+
+___
+### The overall Table of comparison
 The following table presents the CEI values and the corresponding characteristics of the reviewed calibration approaches, sorted in descending order according to the CEI. The table columns are defined as follows:
 
 - **Citation:** Reference number of the calibration approach.

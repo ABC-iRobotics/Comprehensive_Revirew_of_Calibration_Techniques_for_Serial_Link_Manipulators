@@ -33,6 +33,7 @@ ___
 pip3 install pypdf pybtex pyyaml matplotlib
 ```
 
+- Rename your .pdf file into Paper.pdf
 - Run the extractor python script
 ```bash
 python3 extractor.py

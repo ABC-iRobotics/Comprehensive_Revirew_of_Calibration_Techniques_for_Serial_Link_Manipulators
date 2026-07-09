@@ -1,11 +1,15 @@
-import yaml 
-import matplotlib.pyplot as plt
-import matplotlib
-matplotlib.use('Qt5Agg')
+from pathlib import Path
+import yaml
 
+# Paths
+current_path = Path(__file__).resolve().parent
 
-from pylatex import Document, Section, Figure
-from pylatex.utils import NoEscape
+data_path = current_path / "data.yaml"
+table_path = current_path / "table.tex"
+
+with open(data_path, "r", encoding="utf-8") as file:
+    config = yaml.safe_load(file)
+
 
 def make_table(data):
     header = data[0]
@@ -26,20 +30,7 @@ def make_table(data):
 
     return "\n".join(latex)
 
-doc = Document()
-
-with doc.create(Section('Introduction')):
-    doc.append('This document was generated using Python.')
-
-with doc.create(Section('Figure')):
-    with doc.create(Figure(position='h!')) as fig:
-        fig.add_image('figure.png', width=NoEscape(r'0.5\textwidth'))
-        fig.add_caption('Example figure')
-
-## THIS PATH NEEDS TO BE CHANGED ###
-with open(r'C:\Users\karol\Desktop\Munka\cikkek\Images\Images\Cikk\data.yaml') as file:
-    config = yaml.safe_load(file)
-    
+   
 low_to_high = ['very_low', 'low', 'medium', 'high', 'very_high']
 
 rows = []
@@ -81,6 +72,6 @@ for row in rows:
 # generate LaTeX
 table_tex = make_table(data)
 
-with open("table.tex", "w") as f:
+with open(table_path, "w", encoding="utf-8") as f:
     f.write(table_tex)
 

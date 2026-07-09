@@ -2,6 +2,30 @@
 Supplementary materials of the following paper: Comprehensive Review of Calibration Techniques for Serial Link Manipulators: Insights into Mathematical and Methodological Evolutions
 
 
+
+The following table presents the CEI values and the corresponding characteristics of the reviewed calibration approaches, sorted in descending order according to the CEI. The table columns are defined as follows:
+
+- **Citation:** Reference number of the calibration approach.
+- **Modeling:** Kinematic modeling technique:
+  - **DH** – Denavit–Hartenberg
+  - **MDH** – Modified Denavit–Hartenberg
+  - **MIX** – Combined minimal representations
+  - **POE** – Product of Exponentials
+  - **DQ** – Dual Quaternions
+- **Optimization:** Optimization method used:
+  - **LS** – Least-Squares
+  - **LM** – Levenberg–Marquardt
+  - **NM** – Nelder–Mead
+  - **BE** – Bayesian Estimation
+  - **MLE** – Maximum Likelihood Estimation
+  - **GA** – Genetic Algorithm
+- **Estimated Cost:** Estimated implementation cost, rated from **1 (very low)** to **5 (very high)**.
+- **Setup Complexity:** Complexity of the calibration setup, considering factors such as the number of measurement points, required equipment, and experimental configuration, rated from **1 (very low)** to **5 (very high)**.
+- **Computational Cost:** Computational burden of the calibration method, rated from **1 (very low)** to **5 (very high)**.
+- **Normalized Accuracy:** Normalized accuracy improvement achieved by the calibration approach.
+- **CEI:** Calibration Efficiency Index of the corresponding approach.
+
+
 | Citation | Modeling | Optimization | Estimated cost | Setup complexity | Comput. cost | Norm. acc. | CEI |
 |----------|----------|--------------|----------------|------------------|--------------|------------|------|
 | [77]  | MIX | LS  | very low (1)  | low (2)         | low (2)        | 0.94000 | 3.13333 |

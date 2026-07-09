@@ -4,6 +4,7 @@ ___
 - Explanation of the source codes 
 - Usage
 - Table of comparison
+- Generated diagram
 
 ___
 
@@ -106,3 +107,8 @@ The following table presents the CEI values and the corresponding characteristic
 | [79]  | MDH | LS  | medium (3)    | high (4)        | low (2)        | 0.43247 | 0.67574 |
 | [122] | DH  | GA  | low (2)       | low (2)         | very high (5)  | 0.17518 | 0.35752 |
 | [109] | MIX | BE  | medium (3)    | high (4)        | high (4)       | 0.12972 | 0.18531 |
+
+___
+
+### Generated diagram
+![CEI Diagram](Figure_1.png)

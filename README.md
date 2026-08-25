@@ -127,8 +127,11 @@ ___
 ### Acknowledgement
 This work was supported in part by Project 2024-1.2.3-HU-RIZONT-00069 (MedLaBotX), implemented with support provided by the Ministry of Culture and Innovation of Hungary from the National Research, Development, and Innovation Fund, financed under the 2024-1.2.3-HU-RIZONT funding scheme; in part by the Consolidator Researcher Grant of Óbuda University under Grant OKPPKPC004; in part by the National Natural Science Foundation of China under Grant 62521005; and in part by the Fundamental and Interdisciplinary Disciplines Breakthrough Plan of the Ministry of Education of China under Grant JYB2025XDXM109.
 
+___
+
 ### Citation
 
+Bibtex:
 ```tex
 @ARTICLE{11627765,
   author={Károly, Ármin and Gao, Huijun and J. Rudas, Imre and Galambos, Péter},
@@ -142,5 +145,5 @@ This work was supported in part by Project 2024-1.2.3-HU-RIZONT-00069 (MedLaBotX
   doi={10.1109/TCYB.2026.3712508}}
 ```
 
-URL: https://ieeexplore.ieee.org/document/11627765
+IEEEXplore url: https://ieeexplore.ieee.org/document/11627765
 

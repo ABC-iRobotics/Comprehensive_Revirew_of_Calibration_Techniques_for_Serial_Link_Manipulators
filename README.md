@@ -1,4 +1,5 @@
 # Supplementary materials for the paper called: Comprehensive Review of Calibration Techniques for Serial Link Manipulators: Insights into Mathematical and Methodological Evolutions
+
 ___
 ## Table of context
 - Explanation of the source codes 
@@ -7,7 +8,7 @@ ___
 - Generated diagram
 - Reference list of the paper
 - Acknowledgement
-
+- Citation, and IEEEXplore webpage
 
 ___
 
@@ -124,3 +125,22 @@ ___
 ___
 
 ### Acknowledgement
+This work was supported in part by Project 2024-1.2.3-HU-RIZONT-00069 (MedLaBotX), implemented with support provided by the Ministry of Culture and Innovation of Hungary from the National Research, Development, and Innovation Fund, financed under the 2024-1.2.3-HU-RIZONT funding scheme; in part by the Consolidator Researcher Grant of Óbuda University under Grant OKPPKPC004; in part by the National Natural Science Foundation of China under Grant 62521005; and in part by the Fundamental and Interdisciplinary Disciplines Breakthrough Plan of the Ministry of Education of China under Grant JYB2025XDXM109.
+
+### Citation
+
+```tex
+@ARTICLE{11627765,
+  author={Károly, Ármin and Gao, Huijun and J. Rudas, Imre and Galambos, Péter},
+  journal={IEEE Transactions on Cybernetics}, 
+  title={Comprehensive Review of Calibration Techniques for Serial Link Manipulators: Insights Into Mathematical and Methodological Evolutions}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-13},
+  keywords={Calibration;Robots;Modeling;Manipulators;Remote handling;Optimization;End effectors;Measurement;Joints;Joining processes;Geometric modeling;kinematic analysis;measurement techniques;optimization algorithms;robot calibration;serial link manipulators},
+  doi={10.1109/TCYB.2026.3712508}}
+```
+
+URL: https://ieeexplore.ieee.org/document/11627765
+
